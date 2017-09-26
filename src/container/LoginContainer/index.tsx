@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Item, Input, Icon, View } from "native-base";
+import { Item, Input, Icon, Form } from "native-base";
 import Login from "../../stories/screens/Login";
 
 export interface Props {
@@ -9,7 +9,7 @@ export interface State {}
 export default class LoginContainer extends React.Component<Props, State> {
 	render() {
 		const form = (
-			<View>
+			<Form>
 				<Item>
 					<Icon active name="person" />
 					<Input placeholder="EMAIL" keyboardType="email-address" />
@@ -18,7 +18,7 @@ export default class LoginContainer extends React.Component<Props, State> {
 					<Icon active name="unlock" />
 					<Input placeholder="PASSWORD" secureTextEntry />
 				</Item>
-			</View>
+			</Form>
 		);
 		return <Login loginForm={form} onLogin={() => this.props.navigation.navigate("Drawer")} />;
 	}
