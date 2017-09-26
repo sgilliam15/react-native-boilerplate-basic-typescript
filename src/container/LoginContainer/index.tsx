@@ -12,11 +12,11 @@ export default class LoginContainer extends React.Component<Props, State> {
 			<Form>
 				<Item>
 					<Icon active name="person" />
-					<Input placeholder="EMAIL" keyboardType="email-address" />
+					<Input placeholder="Email" keyboardType="email-address" />
 				</Item>
 				<Item>
 					<Icon active name="unlock" />
-					<Input placeholder="PASSWORD" secureTextEntry />
+					<Input placeholder="Password" secureTextEntry />
 				</Item>
 			</Form>
 		);
